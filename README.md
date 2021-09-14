@@ -10,9 +10,11 @@ $ cd project
 $ pipenv install
 ```
     
->    - Install Flask
+>    - Install Flask and more dependencies
 ```bash
-$ pipenv install flask
+    $ pipenv install flask
+    $ pipenv install flask-sqlalchemy
+    $ pipenv install flask-marshmallow
 ```
 
 >    -Structure folders/files:
