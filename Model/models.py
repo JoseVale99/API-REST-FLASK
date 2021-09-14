@@ -19,5 +19,5 @@ class Category(db.Model):
         self.cat_name = cat_name
         self.cat_description = cat_description
 
-
+db.create_all()
         
