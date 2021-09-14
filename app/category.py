@@ -1,6 +1,5 @@
 from app import app
-
-
+from flask import jsonify
 
 
 #  rootes API REST
