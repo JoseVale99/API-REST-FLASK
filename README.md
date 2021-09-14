@@ -15,6 +15,8 @@ $ pipenv install
     $ pipenv install flask
     $ pipenv install flask-sqlalchemy
     $ pipenv install flask-marshmallow
+    $ pipenv install marshmallow-sqlalchemy
+
 ```
 
 >    -Structure folders/files:
