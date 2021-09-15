@@ -1,12 +1,14 @@
-from flask_sqlalchemy import SQLALchemy
-from flask_marshmellow import Marshmallow
-from app import app
+from flask_sqlalchemy import SQLAlchemy
+from flask_marshmallow import Marshmallow
+from flask import Flask
+
+app = Flask(__name__)
 
 
-app.config['SQLALchemy_DATABASE_URI'] = 'mysql+pymysql://USERNAME:PASSWORD@localhost:3306/DB_NAME' 
-app.config['SQLALchemy_TRACK_MODIFICATIONS'] = True
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://USERNAME:PASSWORD@localhost:3306/DB_NAME' 
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 
-db = SQLALchemy(app)
+db = SQLAlchemy(app)
 ma  = Marshmallow(app)
 
 #  Model of category objects
