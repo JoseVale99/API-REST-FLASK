@@ -1,9 +1,10 @@
+from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
-from flask import Flask
 
+
+# Create models for migration in Data Base.
 app = Flask(__name__)
-
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://USERNAME:PASSWORD@localhost:3306/DB_NAME' 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
