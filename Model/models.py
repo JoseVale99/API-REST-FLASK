@@ -1,6 +1,6 @@
 from flask_sqlalchemy import SQLALchemy
 from flask_marshmellow import Marshmallow
-
+from app import app
 
 
 app.config['SQLALchemy_DATABASE_URI'] = 'mysql+pymysql://admin:123456789@localhost:3306/dbpythonAPI' 
